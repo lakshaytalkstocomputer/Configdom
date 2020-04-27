@@ -30,3 +30,23 @@ $ sudo apt-get install firefox
 $ sudo snap install spotify
 ```
 
+3. Installing VLC
+```shell
+$ sudo snap install vlc
+```
+4. Installing 
+Postman
+```shell
+$ sudo snap install postman
+```
+
+4. Installing 
+Okular
+```shell
+$ sudo snap install okular
+```
+
+5. Installing Java [Reference](https://lift.cs.princeton.edu/java/linux/)
+```shell
+
+```
