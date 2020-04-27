@@ -61,3 +61,42 @@ $ sudo apt-get install openjdk-11-jdk
   OpenJDK Runtime Environment (build 11.0.2+7-Ubuntu)
   OpenJDK 64-Bit Server VM (build 11.0.2+7-Ubuntu, mixed mode, sharing)
   ```
+
+6. Installing Jetbrains Font:
+```shell
+$ wget -O JetBrainsMono-1.0.3.zip https://download.jetbrains.com/fonts/JetBrainsMono-1.0.3.zip
+$ sudo unzip JetBrainsMono-1.0.3.zip -d /usr/share/fonts
+$ fc-cache -f -v
+```
+7. Installing Development tools:
+```shell
+$ sudo apt install build-essential
+```
+
+8. Installing nvm, node, yarn: [Reference](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
+```shell
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+```
+This automatically installs nvm and puts the required command in "~/.bashrc" if you use something else like "ZSH" then you have to edit the "~/.zshrc" or respective yourself like this:
+```shell
+$ sudo nano ~/.zshrc
+# Add the folowing lines and save the file with Ctrl+S and exit with Ctrl+Z:
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+$ source ~/.zshrc
+$ nvm --version
+0.34.0
+```
+Now Let's install node and yarn
+```shell
+$ nvm install node
+$ node --version
+v14.0.0
+$ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+OK
+$ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+deb https://dl.yarnpkg.com/debian/ stable main
+$ sudo apt update && sudo apt install yarn
+```
+
