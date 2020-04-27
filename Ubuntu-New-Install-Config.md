@@ -7,7 +7,7 @@ $ cd Apps
 
 1. Installing Mozilla Firefox Manually- [Reference : Look for manualy install section](https://linuxconfig.org/how-to-install-uninstall-and-update-firefox-on-ubuntu-18-04-bionic-beaver-linux)
 
-   a) Downlaod latest tar of irefox from this [link](https://www.mozilla.org/en-US/firefox/download/thanks/)
+   a) Downlaod latest tar of Firefox from this [link](https://www.mozilla.org/en-US/firefox/download/thanks/)
    
    OR
 
@@ -46,7 +46,18 @@ Okular
 $ sudo snap install okular
 ```
 
-5. Installing Java [Reference](https://lift.cs.princeton.edu/java/linux/)
+5. Installing Java : [Reference](https://lift.cs.princeton.edu/java/linux/)
 ```shell
-
+$ sudo add-apt-repository ppa:openjdk-r/ppa
+$ sudo apt-get update
+$ sudo apt-get install openjdk-11-jdk
 ```
+  Now check whether java is correctly installed
+  ```shell
+  $ javac -version
+  javac 11.0.2
+  $ java -version
+  openjdk version "11.0.2" 2019-04-16
+  OpenJDK Runtime Environment (build 11.0.2+7-Ubuntu)
+  OpenJDK 64-Bit Server VM (build 11.0.2+7-Ubuntu, mixed mode, sharing)
+  ```
