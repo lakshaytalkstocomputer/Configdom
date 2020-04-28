@@ -108,3 +108,17 @@ $ sudo apt-get install flameshot
 Then configure, the short for taking screenshots using following:
 ![](images/flameshot.png)
 
+
+
+10. Installing Tor Browser
+
+a) Download tor from [tor](https://www.torproject.org/)
+```shell
+$ cd /Downloads/Apps
+$ 
+```
+
+11. Installing Pomodoro
+```shell
+$ sudo apt-get install gnome-shell-pomodoro
+```
