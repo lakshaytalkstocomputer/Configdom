@@ -100,3 +100,11 @@ deb https://dl.yarnpkg.com/debian/ stable main
 $ sudo apt update && sudo apt install yarn
 ```
 
+9.  Installing Flameshot 
+```shell
+$ sudo apt-get install flameshot
+```
+
+Then configure, the short for taking screenshots using following:
+![](images/flameshot.png)
+
