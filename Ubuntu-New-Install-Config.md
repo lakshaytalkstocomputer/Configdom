@@ -113,9 +113,10 @@ Then configure, the short for taking screenshots using following:
 10. Installing Tor Browser
 
 a) Download tor from [tor](https://www.torproject.org/)
+b) Foolow the steps [link](https://kernpanik.com/geekstuff/2015/01/04/tor-browser-with-icon.html)
 ```shell
-$ cd /Downloads/Apps
-$ 
+$ cd /Downloads/Apps//tor-browser-linux64-9.0.9_en-US/tor-browser_en-US
+$ sudo mv start-tor-browser.desktop /usr/share/applications
 ```
 
 11. Installing Pomodoro
